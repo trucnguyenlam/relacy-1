@@ -944,8 +944,7 @@ template<typename test_t>
 bool simulate(test_params& params)
 {
     char const* test_name = typeid(test_t).name();
-		while (test_name[0] >= '0' && test_name[0] <= '9')
-        test_name += 1;
+	while (test_name[0] >= '0' && test_name[0] <= '9') test_name += 1;
     params.test_name = test_name;
     *params.output_stream << params.test_name << std::endl;
 

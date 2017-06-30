@@ -103,7 +103,7 @@ public:
 
     ~condvar_data_impl()
     {
-        //!!! detect destoy when there are blocked threads
+        //!!! detect destroy when there are blocked threads
     }
 
 private:
